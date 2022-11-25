@@ -7,6 +7,8 @@ import Dashboard from './user/Dashboard';
 import Register from './user/Register';
 import FavoriteCourses from './user/FavoriteCourses';
 import RecommendedCourses from './user/RecommendedCourses';
+import ProfileSetting from './user/ProfileSetting';
+import ChangePassword from './user/ChangePassword';
 import Mycourses from './user/Mycourses';
 import CourseDetail  from './Coursedetail';
 import {Routes, Route} from 'react-router-dom';
@@ -26,7 +28,9 @@ function Main() {
           <Route path='/my-courses' element ={<Mycourses/>}/>
           <Route path='/favorite-courses' element ={<FavoriteCourses/>}/>
           <Route path='/recommended-courses' element ={<RecommendedCourses/>}/>
-        </Routes>
+          <Route path='/profile-setting' element ={<ProfileSetting/>}/>
+          <Route path='/change-password' element ={<ChangePassword/>}/>
+</Routes>
         <Footer/>
       </div> 
     );
