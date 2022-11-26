@@ -12,7 +12,7 @@ function ChangePassword(){
                     <h5 className='card-header'>Change Password</h5>
                     <div className='card-body'>
                     <div className="mb-3 row">
-                        <label for="inputPassword" className="col-sm-2 col-form-label"> New Password</label>
+                        <label for="inputPassword" className="col-sm-2 col-form-label"> Old Password</label>
                         <div className="col-sm-10">
                            <input type="password" className="form-control" id="inputPassword"/>
                         </div>

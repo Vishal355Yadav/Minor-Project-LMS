@@ -5,6 +5,16 @@ import About from './About';
 import Login from './user/Login';
 import Dashboard from './user/Dashboard';
 import Register from './user/Register';
+// teacher 
+import TeacherLogin from './Teacher/TeacherLogin';
+import TeacherDashboard from './Teacher/TeacherDashboard';
+import TeacherRegister from './Teacher/TeacherRegister';
+import TeacherAddCourse from './Teacher/TeacherAddCourse';
+import TeacherChangePassword from './Teacher/TeacherChangePassword';
+import TeacherMycourses from './Teacher/TeacherMycourses';
+import TeacherProfileSetting from './Teacher/TeacherProfileSetting';
+import MyUsers from './Teacher/MyUsers';
+
 import FavoriteCourses from './user/FavoriteCourses';
 import RecommendedCourses from './user/RecommendedCourses';
 import ProfileSetting from './user/ProfileSetting';
@@ -30,6 +40,16 @@ function Main() {
           <Route path='/recommended-courses' element ={<RecommendedCourses/>}/>
           <Route path='/profile-setting' element ={<ProfileSetting/>}/>
           <Route path='/change-password' element ={<ChangePassword/>}/>
+          
+          <Route path='/teacher-login' element ={<TeacherLogin/>}/>
+          <Route path='/teacher-register' element ={<TeacherRegister/>}/>
+          <Route path='/teacher-dashboard' element ={<TeacherDashboard/>}/>
+          <Route path='/add-course' element ={<TeacherAddCourse/>}/>
+          <Route path='/teacher-courses' element ={<TeacherMycourses/>}/>
+          <Route path='/teacher-change-password' element ={<TeacherChangePassword/>}/>
+          <Route path='/teacher-profile-setting' element ={<TeacherProfileSetting/>}/>
+          <Route path='/my-users' element ={<MyUsers/>}/>
+          
 </Routes>
         <Footer/>
       </div> 

@@ -11,7 +11,18 @@ function Header() {
             <div className="navbar-nav ms-auto">
               <Link className="nav-link active" aria-current="page" to="/">Home</Link>
               <a className="nav-link" href="#">Course</a>
-              <a className="nav-link" href="#">Teacher</a>
+              {/* <a className="nav-link" href="#">Teacher</a> */}
+              <li className="nav-item dropdown">
+                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Teacher 
+                 </a>
+                <ul className="dropdown-menu">
+                  <li><Link className="dropdown-item" to="/teacher-login">Login</Link></li>
+                  <li><Link className="dropdown-item" to="/teacher-register">Register</Link></li>                
+                  <li><Link className="dropdown-item" to="/teacher-dashboard">Dashboard</Link></li>
+                  <li><a className="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
               <li className="nav-item dropdown">
                  <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     User
